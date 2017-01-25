@@ -1,5 +1,7 @@
 # excelDate2GeneName
 
+In case you are working with gene lists previously modified in Excel chances are that 3 genes classes are modified, SEPT1, DEC1, MARCH1 into dates Sep-01, Dec-01, Mar-01. Here is the simple script to correct this. Script will test if gene names are lower or upper cases and if they are lower cases they will be converted to upper cases, followed by the conversion of SEP- and SEP-0 to SEPT, MAR- and MAR-0 to MARCH, and DEC- and DEC-0 to DEC. Output will contain oriiginal gene list in upper cases corrected for Excel conversions. Output is in saved in .corrected file.
+
 ```sh
 #!/bin/bash
 
@@ -47,8 +49,9 @@ rm $1.cut2
 rm $1.cut.mod
 
 ```
-
-DN52ei9s:Downloads milospjanic$ cat test3
+##Usage
+<pre>
+$cat genes.file
 Tcf21	11
 Tcf22	13
 Tcf23	43
@@ -60,7 +63,9 @@ Sep-11	2
 Sep-09	1342
 Mar-13	2
 Mar-11	22
-DN52ei9s:Downloads milospjanic$ cat test3.corrected 
+
+$chmod 755 excelDate2GeneName.sh
+$ ./excelDate2GeneName.sh genes.file
 TCF21 11
 TCF22 13
 TCF23 43
@@ -72,3 +77,4 @@ SEPT11 2
 SEPT9 1342
 MARCH13 2
 MARCH11 22
+</pre>
