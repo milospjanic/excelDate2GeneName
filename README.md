@@ -65,6 +65,7 @@ Mar-13	2
 Mar-11	22
 
 $chmod 755 excelDate2GeneName.sh
+
 $ ./excelDate2GeneName.sh genes.file
 TCF21 11
 TCF22 13
