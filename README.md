@@ -1,5 +1,6 @@
 # excelDate2GeneName
 
+```sh
 #!/bin/bash
 
 # change lower to upper cases
@@ -45,7 +46,7 @@ rm $1.cut
 rm $1.cut2
 rm $1.cut.mod
 
-
+```
 
 DN52ei9s:Downloads milospjanic$ cat test3
 Tcf21	11
