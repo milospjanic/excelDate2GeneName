@@ -23,9 +23,9 @@ fi
 cut -f1 $1 > $1.cut
 cut -f2- $1 > $1.cut2
 
-filename="$1.cut"
-
 # run test_lower on each line of .cut file
+
+filename="$1.cut"
 
 while read -r line
 do
