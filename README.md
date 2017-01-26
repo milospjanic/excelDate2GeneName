@@ -19,6 +19,7 @@ else
 fi
 }
 
+# cut first column of the file containing the gene names
 
 cut -f1 $1 > $1.cut
 cut -f2- $1 > $1.cut2
