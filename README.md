@@ -5,7 +5,7 @@ In case you are working with gene lists previously modified in Excel chances are
 ```sh
 #!/bin/bash
 
-# change lower to upper cases
+# change lower to upper cases function
 
 function test_lower {
 test=`echo $1 | grep [a-z]`
@@ -22,7 +22,11 @@ fi
 
 cut -f1 $1 > $1.cut
 cut -f2- $1 > $1.cut2
+
 filename="$1.cut"
+
+# run test_lower on each line of .cut file
+
 while read -r line
 do
     name="$line"
