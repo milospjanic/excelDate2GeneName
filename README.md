@@ -19,7 +19,6 @@ else
 fi
 }
 
-test_lower Ahr12
 
 cut -f1 $1 > $1.cut
 cut -f2- $1 > $1.cut2
